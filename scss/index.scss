@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+/*Intro*/
+
+.intro {
+    background: url(../images/intro/background.jpg);
+    background-size: cover;
+    padding: 40px 0 200px 0;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Nav*/
+
+.nav {
+    line-height: 29px;
+
+    .nav-item {
+        display: inline-block;
+        margin: 0 0 0 30px;
+        color: #191919;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #10c9c3;
+        }
+    }
+}
