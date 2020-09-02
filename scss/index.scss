@@ -324,3 +324,172 @@ body {
         }
     }
 }
+
+/*Revievs*/
+
+.reviews {
+    background-color: #10c9c3;
+    text-align: center;
+    padding: 180px 0 55px 0;
+
+    &-text {
+        display: inline-block;
+        max-width: 800px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &-name {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 35px 0 0 0;
+    }
+
+    &-img {
+        margin: 105px 0 0 0;
+    }
+}
+
+/*Brands*/
+
+.brand {
+    padding: 70px 0;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        display: inline-block;
+    }
+}
+
+/*Section*/
+
+.message {
+    background-color: #f5f5f5;
+    padding: $indent 0 $indent 0;
+
+    .section-header-text {
+        max-width: 535px;
+    }
+
+    &-form {
+        max-width: 670px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        input, textarea {
+            background-color: #ffffff;
+            border: 0;
+            outline: 0;
+            padding: 20px 0 20px 20px;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #787878;
+            font-family: Nunito Sans;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+
+        &-name, &-email {
+            width: 320px;
+            height: 50px;
+        }
+
+        &-title {
+            width: 100%;
+            margin: 30px 0 0 0;
+        }
+
+        &-comment {
+            resize: none;
+            width: 100%;
+            height: 170px;
+            margin: 30px 0 0 0;
+        }
+
+        &-button {
+            margin: 30px auto 0;
+            width: 180px;
+            height: 55px;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: #10c9c3;
+            border: 0;
+            outline: 0;
+        }
+    }
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #141414;
+    padding: $indent 0 $indent 0;
+
+    &-inner {
+        display: flex;
+    }
+
+    .copyright {
+        max-width: 225px;
+
+        &-title {
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &-text {
+            color: #bcbcbc;
+            font-family: "Nunito Sans";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 30px 0 0 0;
+        }
+    }
+
+    .contact {
+        color: #bcbcbc;
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0 0 0 240px;
+    }
+
+    .links {
+        width: 100%;
+        max-width: 370px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 0 auto;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #bcbcbc;
+            font-family: "Nunito Sans";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}

@@ -323,3 +323,204 @@ body {
   font-weight: 400;
   margin: 20px 0 0 0;
 }
+
+/*Revievs*/
+.reviews {
+  background-color: #10c9c3;
+  text-align: center;
+  padding: 180px 0 55px 0;
+}
+
+.reviews-text {
+  display: inline-block;
+  max-width: 800px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.reviews-name {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 35px 0 0 0;
+}
+
+.reviews-img {
+  margin: 105px 0 0 0;
+}
+
+/*Brands*/
+.brand {
+  padding: 70px 0;
+}
+
+.brand-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brand-item {
+  display: inline-block;
+}
+
+/*Section*/
+.message {
+  background-color: #f5f5f5;
+  padding: 100px 0 100px 0;
+}
+
+.message .section-header-text {
+  max-width: 535px;
+}
+
+.message-form {
+  max-width: 670px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.message-form input, .message-form textarea {
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  padding: 20px 0 20px 20px;
+}
+
+.message-form input::-webkit-input-placeholder, .message-form textarea::-webkit-input-placeholder {
+  color: #787878;
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.message-form input:-ms-input-placeholder, .message-form textarea:-ms-input-placeholder {
+  color: #787878;
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.message-form input::-ms-input-placeholder, .message-form textarea::-ms-input-placeholder {
+  color: #787878;
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.message-form input::placeholder, .message-form textarea::placeholder {
+  color: #787878;
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.message-form-name, .message-form-email {
+  width: 320px;
+  height: 50px;
+}
+
+.message-form-title {
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+.message-form-comment {
+  resize: none;
+  width: 100%;
+  height: 170px;
+  margin: 30px 0 0 0;
+}
+
+.message-form-button {
+  margin: 30px auto 0;
+  width: 180px;
+  height: 55px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #10c9c3;
+  border: 0;
+  outline: 0;
+}
+
+/*Footer*/
+.footer {
+  background-color: #141414;
+  padding: 100px 0 100px 0;
+}
+
+.footer-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .copyright {
+  max-width: 225px;
+}
+
+.footer .copyright-title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer .copyright-text {
+  color: #bcbcbc;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 30px 0 0 0;
+}
+
+.footer .contact {
+  color: #bcbcbc;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 0 240px;
+}
+
+.footer .links {
+  width: 100%;
+  max-width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 0 auto;
+}
+
+.footer .links a {
+  display: block;
+  text-decoration: none;
+  color: #bcbcbc;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
