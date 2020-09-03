@@ -58,33 +58,39 @@
     </section>
     <section class="statistics">
         <div class="container">
-            <div class="statistics-item">
-                <div class="statistics-item-img">
-                    <img src="./images/statistics/stat-1.png" alt="">
+            <div class="statistics-inner">
+                <div class="statistics-box">
+                    <div class="statistics-item">
+                        <div class="statistics-item-img">
+                            <img src="./images/statistics/stat-1.png" alt="">
+                        </div>
+                        <div class="statistics-item-count">548</div>
+                        <div class="statistics-item-text">projects completed</div>
+                    </div>
+                    <div class="statistics-item">
+                        <div class="statistics-item-img">
+                            <img src="./images/statistics/stat-2.png" alt="">
+                        </div>
+                        <div class="statistics-item-count">1465</div>
+                        <div class="statistics-item-text">WORKING HOURS</div>
+                    </div>
                 </div>
-                <div class="statistics-item-count">548</div>
-                <div class="statistics-item-text">projects completed</div>
-            </div>
-            <div class="statistics-item">
-                <div class="statistics-item-img">
-                    <img src="./images/statistics/stat-2.png" alt="">
+                <div class="statistics-box">
+                    <div class="statistics-item">
+                        <div class="statistics-item-img">
+                            <img src="./images/statistics/stat-3.png" alt="">
+                        </div>
+                        <div class="statistics-item-count">612</div>
+                        <div class="statistics-item-text">POSITIVE FEEDBACKS</div>
+                    </div>
+                    <div class="statistics-item">
+                        <div class="statistics-item-img">
+                            <img src="./images/statistics/stat-4.png" alt="">
+                        </div>
+                        <div class="statistics-item-count">735</div>
+                        <div class="statistics-item-text">HAPPY CLIENTS</div>
+                    </div>
                 </div>
-                <div class="statistics-item-count">1465</div>
-                <div class="statistics-item-text">WORKING HOURS</div>
-            </div>
-            <div class="statistics-item">
-                <div class="statistics-item-img">
-                    <img src="./images/statistics/stat-3.png" alt="">
-                </div>
-                <div class="statistics-item-count">612</div>
-                <div class="statistics-item-text">POSITIVE FEEDBACKS</div>
-            </div>
-            <div class="statistics-item">
-                <div class="statistics-item-img">
-                    <img src="./images/statistics/stat-4.png" alt="">
-                </div>
-                <div class="statistics-item-count">735</div>
-                <div class="statistics-item-text">HAPPY CLIENTS</div>
             </div>
         </div>
     </section>
@@ -124,16 +130,16 @@
         <div class="work-footer">load more work</div>
     </section>
     <section class="procces">
-        <div class="section-header">
-            <h1 class="section-header-title">
-                Our Work Process
-            </h1>
-            <p class="section-header-text">
-                Was years it seasons was there form he in in them together over that, 
-                third sixth gathered female creeping bearing behold years.
-            </p>
-        </div>
         <div class="container">
+            <div class="section-header">
+                <h1 class="section-header-title">
+                    Our Work Process
+                </h1>
+                <p class="section-header-text">
+                    Was years it seasons was there form he in in them together over that, 
+                    third sixth gathered female creeping bearing behold years.
+                </p>
+            </div>
             <div class="player">
                 <div class="player-btn">
                     <img src="./images/player/player-btn.png" alt="">
@@ -214,15 +220,17 @@
         </div>
     </section>
     <section class="reviews">
-        <div class="reviews-text">
-            “ Outstanding job and exceeded all expectations. It was a pleasure 
-            to work with them on a sizable first project and am looking 
-            forward to start the next one asap.”
+        <div class="container">
+            <div class="reviews-text">
+                “ Outstanding job and exceeded all expectations. It was a pleasure 
+                to work with them on a sizable first project and am looking 
+                forward to start the next one asap.”
+            </div>
+            <div class="reviews-name">
+                Michael Hopkins
+            </div>
+            <img src="./images/reviews/reviews-1.png" alt="" class="reviews-img">
         </div>
-        <div class="reviews-name">
-            Michael Hopkins
-        </div>
-        <img src="./images/reviews/reviews-1.png" alt="" class="reviews-img">
     </section>
     <section class="brand">
         <div class="container">
@@ -246,36 +254,40 @@
         </div>
     </section>
     <section class="message">
-        <div class="section-header">
-            <h1 class="section-header-title">
-                Need a Project?
-            </h1>
-            <p class="section-header-text">
-                Let us know what you're looking for in an agency. We'll take a look and see 
-                if this could be the start of something beautiful.
-            </p>
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-header-title">
+                    Need a Project?
+                </h1>
+                <p class="section-header-text">
+                    Let us know what you're looking for in an agency. We'll take a look and see 
+                    if this could be the start of something beautiful.
+                </p>
+            </div>
+            <form class="message-form" method="POST">
+                <input type="text" class="message-form-name" placeholder="Your Name">
+                <input type="email" class="message-form-email" placeholder="Your Email">
+                <input type="text" class="message-form-title" placeholder="Your Title">
+                <textarea type="text" class="message-form-comment" placeholder="Your Comment"></textarea>
+                <button class="button" type="submit">send message</button>
+            </form>
         </div>
-        <form class="message-form" method="POST">
-            <input type="text" class="message-form-name" placeholder="Your Name">
-            <input type="email" class="message-form-email" placeholder="Your Email">
-            <input type="text" class="message-form-title" placeholder="Your Title">
-            <textarea type="text" class="message-form-comment" placeholder="Your Comment"></textarea>
-            <button class="message-form-button" type="submit">send message</button>
-        </form>
     </section>
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
-                <div class="copyright">
-                    <div class="copyright-title">Piroll Design, Inc.</div>
-                    <div class="copyright-text">
-                        © 2017 Piroll. All rights reserved.
-                        Designed by robirurk.
+                <div class="footer-box">
+                    <div class="copyright">
+                        <div class="copyright-title">Piroll Design, Inc.</div>
+                        <div class="copyright-text">
+                            © 2017 Piroll. All rights reserved.
+                            Designed by robirurk.
+                        </div>
                     </div>
-                </div>
-                <div class="contact">
-                    hello@pirolltheme.com <br>
-                    +44 987 065 908 
+                    <div class="contact">
+                        hello@pirolltheme.com <br>
+                        +44 987 065 908 
+                    </div>
                 </div>
                 <div class="links">
                     <div class="links-item">
