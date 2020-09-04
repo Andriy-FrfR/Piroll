@@ -127,6 +127,11 @@ body {
         line-height: 24px;
         text-transform: uppercase;
 
+        
+        &.active {
+            color: #10c9c3;
+        }
+
         &:hover {
             color: #10c9c3;
             cursor: pointer;
