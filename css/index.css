@@ -9,7 +9,7 @@
 
 body {
   color: #787878;
-  font-family: Nunito Sans;
+  font-family: "Nunito Sans";
   font-size: 18px;
   font-weight: 400;
 }
@@ -30,7 +30,7 @@ body {
   width: 100%;
   display: inline-block;
   color: #191919;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 30px;
   font-weight: 700;
 }
@@ -59,7 +59,7 @@ body {
   text-decoration: none;
   text-align: center;
   line-height: 54px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -82,7 +82,7 @@ body {
 
 .banner-header {
   color: #1d1d1d;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 38px;
   font-weight: 700;
   margin: 0 0 30px 0;
@@ -116,7 +116,7 @@ body {
   display: inline-block;
   margin: 0 0 0 30px;
   color: #191919;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
@@ -137,7 +137,7 @@ body {
 
 .skills-title {
   color: #171717;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 30px;
   font-weight: 700;
   margin: 0 0 0 0;
@@ -146,7 +146,7 @@ body {
 .skills-item {
   position: relative;
   color: #000000;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 700;
   line-height: 30px;
@@ -217,7 +217,7 @@ body {
 
 .statistics-item-count {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -225,7 +225,7 @@ body {
 
 .statistics-item-text {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -280,7 +280,7 @@ body {
   width: 100%;
   background-color: #f5f5f5;
   color: #8e8e8e;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -332,7 +332,7 @@ body {
 
 .services-item-title {
   color: #191919;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -360,14 +360,14 @@ body {
   display: inline-block;
   max-width: 800px;
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 24px;
   font-weight: 500;
 }
 
 .reviews-name {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -432,28 +432,28 @@ body {
 
 .message-form input::-webkit-input-placeholder, .message-form textarea::-webkit-input-placeholder {
   color: #787878;
-  font-family: Nunito Sans;
+  font-family: "Nunito Sans";
   font-size: 15px;
   font-weight: 400;
 }
 
 .message-form input:-ms-input-placeholder, .message-form textarea:-ms-input-placeholder {
   color: #787878;
-  font-family: Nunito Sans;
+  font-family: "Nunito Sans";
   font-size: 15px;
   font-weight: 400;
 }
 
 .message-form input::-ms-input-placeholder, .message-form textarea::-ms-input-placeholder {
   color: #787878;
-  font-family: Nunito Sans;
+  font-family: "Nunito Sans";
   font-size: 15px;
   font-weight: 400;
 }
 
 .message-form input::placeholder, .message-form textarea::placeholder {
   color: #787878;
-  font-family: Nunito Sans;
+  font-family: "Nunito Sans";
   font-size: 15px;
   font-weight: 400;
 }
@@ -505,7 +505,7 @@ body {
 
 .copyright-title {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 700;
 }
