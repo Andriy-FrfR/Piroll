@@ -55,6 +55,7 @@ body {
   width: 180px;
   height: 54px;
   background-color: #10c9c3;
+  cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -223,28 +224,27 @@ body {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  padding: 0 0 20px 0;
   margin: 40px 0 0 0;
 }
 
-.skills-item::before {
-  content: '';
+.percents-grey-bar {
   display: block;
-  position: absolute;
-  top: 40px;
-  z-index: 30;
-  width: 336px;
   height: 3px;
-  background-color: #10c9c3;
+  width: 500px;
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+  background-color: #d8d8d8;
 }
 
-.skills-item::after {
-  content: '';
+.percents-blue-bar {
   display: block;
   position: absolute;
-  top: 40px;
-  width: 500px;
+  top: 100%;
+  z-index: 30;
   height: 3px;
-  background-color: #d8d8d8;
+  background-color: #10c9c3;
 }
 
 /*Statistics*/
@@ -356,6 +356,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   padding: 45px 0 45px 0;
 }
@@ -695,8 +696,8 @@ body {
     padding: 130px 0 130px 0;
     margin: 70px 0 0 0;
   }
-  .skills-item::after {
-    width: 400px;
+  .percents-grey-bar {
+    width: 445px;
   }
   /*Statistics*/
   .statistics {
@@ -796,11 +797,8 @@ body {
   .skills-item {
     font-size: 10px;
   }
-  .skills-item::after {
-    width: 270px;
-  }
-  .skills-item::before {
-    width: 270px;
+  .percents-grey-bar {
+    width: 290px;
   }
   /*Statistics*/
   .statistics {

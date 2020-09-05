@@ -32,14 +32,16 @@ function navItem(event) {
     navItemActive = target;
 }
 
-// let skillsItemsPercents = document.querySelectorAll('.skills-percents');
+function defineBlueBarWidth() {
+    let skillsItems = document.querySelectorAll('.skills-item');
 
-// function defineSkillsBeforeWidth() {
-//     for (let item of skillsItemsPercents) {
-//         let parent = item.closest('.skills-item');
+    for (let item of skillsItems) {
+        let blueBar = item.querySelector('.percents-blue-bar'),
+            greyBar = item.querySelector('.percents-grey-bar'),
+            percents = +item.querySelector('.skills-percents').innerHTML;
 
-//         (item) => alert(1);
-//     }
-// }
+        blueBar.style.width = greyBar.offsetWidth / 100 * percents + 'px';
+    }
+}
 
-// defineSkillsBeforeWidth();
+defineBlueBarWidth();
