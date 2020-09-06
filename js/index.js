@@ -59,7 +59,7 @@ const sliderInner = document.querySelector('.slider-inner'),
     sliderImages = document.querySelectorAll('.slider-image');
 
 let sliderActiveImage = document.querySelector('.slider-image.active');
-    sliderActiveImage.src = './images/slider/slider-active.png'
+    sliderActiveImage.src = '/images/slider/slider-active.png'
     
 sliderWrapper.style.marginLeft = (-sliderActiveImage.dataset.order + 1) * sliderInner.offsetWidth + 'px';
 
@@ -73,8 +73,8 @@ function sliderImageClick() {
 
     sliderWrapper.style.marginLeft = parseFloat(window.getComputedStyle(sliderWrapper).marginLeft) -difference * sliderInner.offsetWidth + 'px';
 
-    sliderActiveImage.src = './images/slider/slider-passive.png';
-    this.src = './images/slider/slider-active.png';
+    sliderActiveImage.src = '/images/slider/slider-passive.png';
+    this.src = '/images/slider/slider-active.png';
 
     sliderActiveImage = this;
 }
