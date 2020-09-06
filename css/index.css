@@ -429,16 +429,39 @@ body {
   padding: 180px 0 55px 0;
 }
 
-.reviews-text {
-  display: inline-block;
+/*Slider*/
+.slider-inner {
   max-width: 800px;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slider-wrapper {
+  width: 9000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.slider-item {
+  display: inline-block;
+  width: 800px;
+}
+
+.slider-text {
+  display: inline-block;
   color: #ffffff;
   font-family: "Montserrat";
   font-size: 24px;
   font-weight: 500;
 }
 
-.reviews-name {
+.slider-name {
   color: #ffffff;
   font-family: "Montserrat";
   font-size: 12px;
@@ -447,8 +470,26 @@ body {
   margin: 35px 0 0 0;
 }
 
-.reviews-img {
-  margin: 105px 0 0 0;
+.slider-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 110px 0 0 0;
+}
+
+.slider-image {
+  cursor: pointer;
+  margin: 0 0 0 10px;
+}
+
+.slider-image:first-child {
+  margin: 0;
 }
 
 /*Brands*/
@@ -671,6 +712,13 @@ body {
   .reviews {
     padding: 140px 0 55px 0;
   }
+  /*Slider*/
+  .slider-inner {
+    max-width: 700px;
+  }
+  .slider-item {
+    width: 700px;
+  }
   /*Footer*/
   .footer-box {
     -webkit-box-pack: justify;
@@ -738,6 +786,13 @@ body {
   /*Reviews*/
   .reviews {
     padding: 120px 0 35px 0;
+  }
+  /*Slider*/
+  .slider-inner {
+    max-width: 470px;
+  }
+  .slider-item {
+    width: 470px;
   }
   /*Brand*/
   .brand {
@@ -841,10 +896,17 @@ body {
   .reviews {
     padding: 100px 0 25px 0;
   }
-  .reviews-text {
+  /*Slider*/
+  .slider-inner {
+    max-width: 320px;
+  }
+  .slider-item {
+    width: 320px;
+  }
+  .slider-text {
     font-size: 18px;
   }
-  .reviews-img {
+  .slider-images {
     margin: 60px 0 0 0;
   }
   /*Message*/
@@ -886,10 +948,11 @@ body {
   .reviews {
     padding: 80px 0 15px 0;
   }
-  .reviews-name {
+  /*Slider*/
+  .slider-name {
     margin: 25px 0 0 0;
   }
-  .reviews-img {
+  .slider-images {
     margin: 50px 0 0 0;
   }
   /*Message*/
