@@ -251,6 +251,13 @@ body {
 .statistics {
   background-color: #10c9c3;
   padding: 100px 0 100px 0;
+  -webkit-transition: opacity .5s linear, -webkit-transform .3s linear;
+  transition: opacity .5s linear, -webkit-transform .3s linear;
+  transition: transform .3s linear, opacity .5s linear;
+  transition: transform .3s linear, opacity .5s linear, -webkit-transform .3s linear;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  opacity: 0;
 }
 
 .statistics-inner {
@@ -302,6 +309,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 10px 0 0 0;
+}
+
+.statistics.animate {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
 }
 
 /*Work*/

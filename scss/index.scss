@@ -255,6 +255,9 @@ body {
 .statistics {
     background-color: #10c9c3;
     padding: $indent-initial 0 $indent-initial 0;
+    transition: transform .3s linear, opacity .5s linear;
+    transform: translate(0, 100%);
+    opacity: 0;
 
     &-inner {
         display: flex;
@@ -297,6 +300,11 @@ body {
             margin: 10px 0 0 0;
         }
     }
+}
+
+.statistics.animate {
+    transform: translate(0, 0);
+    opacity: 1;
 }
 
 /*Work*/

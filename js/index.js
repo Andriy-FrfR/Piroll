@@ -50,6 +50,8 @@ function defineBlueBarWidth() {
     }
 }
 
+
+
 defineBlueBarWidth();
 
 // Slider
@@ -77,4 +79,42 @@ function sliderImageClick() {
     this.src = 'images/slider/slider-active.png';
 
     sliderActiveImage = this;
+}
+
+//Animations
+
+const animItems = document.querySelectorAll('.anim-items');
+
+if (animItems.length > 0) {
+    function animOnScroll() {
+        for (let i = 0; i < animItems.length; i++) {
+            const animItem = animItems[i];
+            const animItemHeight = animItem.offsetHeight;
+            const animItemOffset = offset(animItem).top;
+            const animStart = 10;
+
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+            if (animItemHeight > window.innerHeight) {
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+            }
+
+            if ((window.pageYOffset > animItemOffset - animItemPoint) && (window.pageYOffset < animItemOffset + animItemHeight)) {
+                animItem.classList.add('animate');
+            } else {
+                if (!animItem.classList.contains('no-unanimate')) {
+                    animItem.classList.remove('animate');
+                }
+            }
+        }
+    }
+
+    function offset(elem) {
+        const elemRect = elem.getBoundingClientRect(),
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        return { top: elemRect.top + scrollTop }
+    }
+
+    animOnScroll();
+    window.addEventListener('scroll', animOnScroll);
 }
