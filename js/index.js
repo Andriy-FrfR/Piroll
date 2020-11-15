@@ -16,7 +16,7 @@ let navItemActive;
 
 nav.onmousedown = function() {
     return false;
-}
+};
 
 //Nav-item active
 
@@ -25,7 +25,9 @@ nav.addEventListener('click', navItem);
 function navItem(event) {
     let target = event.target.closest('.nav-item');
 
-    if (!target) return;
+    if (!target) {
+        return;
+    }
 
     if (navItemActive) {
         navItemActive.classList.remove('active');
@@ -61,7 +63,7 @@ const sliderInner = document.querySelector('.slider-inner'),
     sliderImages = document.querySelectorAll('.slider-image');
 
 let sliderActiveImage = document.querySelector('.slider-image.active');
-    sliderActiveImage.src = 'images/slider/slider-active.png'
+    sliderActiveImage.src = 'images/slider/slider-active.png';
     
 sliderWrapper.style.marginLeft = (-sliderActiveImage.dataset.order + 1) * sliderInner.offsetWidth + 'px';
 
@@ -73,7 +75,7 @@ function sliderImageClick() {
     const currentItemOrder = +this.dataset.order;
     let difference = currentItemOrder - +sliderActiveImage.dataset.order;
 
-    sliderWrapper.style.marginLeft = parseFloat(window.getComputedStyle(sliderWrapper).marginLeft) -difference * sliderInner.offsetWidth + 'px';
+    sliderWrapper.style.marginLeft = parseFloat(window.getComputedStyle(sliderWrapper).marginLeft) - difference * sliderInner.offsetWidth + 'px';
 
     sliderActiveImage.src = 'images/slider/slider-passive.png';
     this.src = 'images/slider/slider-active.png';
@@ -90,29 +92,30 @@ if (animItems.length > 0) {
         for (let i = 0; i < animItems.length; i++) {
             const animItem = animItems[i];
             const animItemHeight = animItem.offsetHeight;
-            const animItemOffset = offset(animItem).top;
-            const animStart = 10;
+            const animItemOffset = topOffset(animItem).offset;
 
-            let animItemPoint = window.innerHeight - animItemHeight / animStart;
-            if (animItemHeight > window.innerHeight) {
-                animItemPoint = window.innerHeight - window.innerHeight / animStart;
-            }
+            let animPersOffset = animItemHeight / 100 * animItem.dataset.animPersOffset || 0,
+                animPixOffset = animItem.dataset.animPixOffset || 0;
+
+            let animItemPoint = window.innerHeight - (+animPersOffset + +animPixOffset);
 
             if ((window.pageYOffset > animItemOffset - animItemPoint) && (window.pageYOffset < animItemOffset + animItemHeight)) {
-                animItem.classList.add('animate');
+                setTimeout(() => {
+                    animItem.classList.add('animate');
+                }, animItem.dataset.animDelay);
             } else {
-                if (!animItem.classList.contains('no-unanimate')) {
+                if (animItem.classList.contains('unanimate')) {
                     animItem.classList.remove('animate');
                 }
             }
         }
     }
 
-    function offset(elem) {
+    const topOffset = (elem) => {
         const elemRect = elem.getBoundingClientRect(),
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        return { top: elemRect.top + scrollTop }
+        return { offset: elemRect.top + scrollTop }
     }
 
     animOnScroll();
