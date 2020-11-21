@@ -38,24 +38,6 @@ function navItem(event) {
     navItemActive = target;
 }
 
-// Skills
-
-function defineBlueBarWidth() {
-    const skillsItems = document.querySelectorAll('.skills-item');
-
-    for (let item of skillsItems) {
-        const blueBar = item.querySelector('.percents-blue-bar'),
-            greyBar = item.querySelector('.percents-grey-bar'),
-            percents = +item.querySelector('.skills-percents').innerHTML;
-
-        blueBar.style.width = greyBar.offsetWidth / 100 * percents + 'px';
-    }
-}
-
-
-
-defineBlueBarWidth();
-
 // Slider
 
 const sliderInner = document.querySelector('.slider-inner'),
@@ -115,9 +97,58 @@ if (animItems.length > 0) {
         const elemRect = elem.getBoundingClientRect(),
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        return { offset: elemRect.top + scrollTop }
-    }
+        return { offset: elemRect.top + scrollTop, };
+    };
 
     animOnScroll();
     window.addEventListener('scroll', animOnScroll);
 }
+
+// Skills-bars animation
+
+function animate({timing, draw, duration}) {
+
+    let start = performance.now();
+  
+    requestAnimationFrame(function animate(time) {
+      // timeFraction изменяется от 0 до 1
+      let timeFraction = (time - start) / duration;
+      if (timeFraction > 1) {
+          timeFraction = 1;
+      }
+  
+      // вычисление текущего состояния анимации
+      let progress = timing(timeFraction);
+  
+      draw(progress); // отрисовать её
+  
+      if (timeFraction < 1) {
+        requestAnimationFrame(animate);
+      }
+    });
+}
+
+const skillsItems = document.querySelectorAll('.skills-item'),
+    skillsItemsWrapper = document.querySelector('.skills-items-wrapper');
+
+window.addEventListener('scroll', () => {
+    if (skillsItemsWrapper.classList.contains('animate') && !skillsItemsWrapper.classList.contains('animated')) {
+        animate({
+            timing(timeFraction) {
+                return timeFraction;
+            },
+            draw(progress) {
+                for(let elem of skillsItems) {
+                    const blueBar = elem.querySelector('.percents-blue-bar'),
+                        greyBar = elem.querySelector('.percents-grey-bar'),
+                        percents = +elem.querySelector('.skills-percents').innerHTML;
+
+                    blueBar.style.width = greyBar.offsetWidth / 100 * percents * progress + 'px';
+                }
+
+                skillsItemsWrapper.classList.add('animated')
+            },
+            duration: 300,
+        });
+    }
+});
